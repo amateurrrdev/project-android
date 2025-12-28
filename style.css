@@ -1,0 +1,161 @@
+@charset "UTF-8";
+  
+    :root{
+     --color0: rgb(203, 246, 246);
+     --color1:rgb(159, 206, 204);
+     --color2: rgb(92,172,158);
+     --color3: rgb(51,107,135);
+     --color4: rgb(14,46,66);
+     --color5: rgb(5, 31, 46);
+     --font0: Arial;
+     --font1: BebasNeueRegular;
+     --font2: idroid;
+     
+    }
+      @font-face {
+        font-family:idroid;
+        src: url(fonts/idroid.otf);
+    }
+    @font-face {
+        font-family: BebasNeueRegular;
+        src: url(fonts/BebasNeue-Regular.otf);
+    }
+    body{
+        background-color: var(--color0);
+        font-family:var(--font0);
+    }
+    
+    header{
+        background-color: var(--color4);
+        min-height: 120px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        background-image: linear-gradient(to bottom,var(--color2),var(--color4));
+    }
+    header>h1{
+        font-family: var(--font1);
+        color: white;
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 0px black;
+    }
+    header>p {
+        color: white;
+        font-size: 1em;
+        max-width: 600px;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-shadow: 2px 2px 0px black;
+    }
+    nav{
+       background-color:var(--color4);
+       padding:10px;
+       box-shadow: 0px 7px 7px rgb(33, 57, 54);
+    }
+    nav > a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+    nav > a:hover{
+        text-decoration: solid;
+        background-color: var(--color3);
+        color: var(--color5);
+        border-radius:10px;
+    }
+    main{
+        background-color: white;
+        min-width: 300px;
+        max-width: 1000px;
+        margin: auto;
+        margin-bottom: 30px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgb(32, 22, 22);
+    }
+     main img{
+        width: 100%;
+     }
+    main h1{
+        font-family: var(--font2);
+        color: var(--color5);
+        font-size: 1.7em;
+    }
+    main h2{
+        font-family: var(--font2);
+        color: var(--color5);
+        font-size: 1.3em;
+        background-image: linear-gradient(to right,var(--color1),var(--color4));
+    }
+    main img.pq{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+    main p {
+        text-align: justify;
+        margin: 15px,0px,15px,0px;
+        line-height: 2em;
+        font-weight: 500;
+        
+    }
+    main strong {
+        font-weight: bold;
+    }
+    main a {
+        padding: 2px,6px;
+        background-color: rgb(88, 146, 173);
+        text-decoration: none;
+        color: var(--color5);
+    }
+    
+    aside{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: var(--color3);
+        color: rgb(219, 219, 254);
+    }
+    div.video{
+        background-color: var(--color4);
+        margin: 0px -20px ;
+        margin-bottom: 30px;
+        padding: 20px;
+        padding-bottom: 50%;
+        position: relative;
+        
+    }
+    div.video > iframe{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;~
+    }
+    aside h2{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: var(--color0);
+        background-color: var(--color4);
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: none;
+    }
+    aside>ul{
+        background-color: var(--color3);
+        list-style-type:'\2714\0020\0020';
+        columns: 2;
+        list-style-position: inside;
+    }
+    
+    footer{
+        background-color: var(--color5);
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+    footer a{
+       text-decoration: none;
+        color: white; 
+    }
